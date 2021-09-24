@@ -16,8 +16,6 @@ var euro = Math.round(timeDiff * euroPerSecond)
 
 var zloty = Math.round(euro * 4.6)
 
-console.log(zloty+" PLN")
-
 var sasin = Math.round(zloty/70000000 *100000)/100000
 
 
