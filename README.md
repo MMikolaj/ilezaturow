@@ -1,1 +1,1 @@
-ile za Turów?
+Ile za Turów? Przeróżne waluty
