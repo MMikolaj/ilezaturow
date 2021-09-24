@@ -23,6 +23,10 @@ var sasin = Math.round(zloty/70000000 *100000)/100000
 
 console.log(sasin+" $a$inów")
 
+var nowak = Math.round(zloty/40000)
+
+var dworczyk = Math.round(zloty/4320)
+
 
 $( document ).ready(function() {
 
@@ -37,9 +41,11 @@ function amount(){
     $("#euro").html(euro);
     $("#zloty").html(zloty);
     $("#sasin").html(sasin);
+    $("#nowak").html(nowak);
+    $("#dworczyk").html(dworczyk);
 
 
-    var myVar = setInterval(myTimer, 1000);
+var myVar = setInterval(myTimer, 1000);
 
 function myTimer() {
 
@@ -61,5 +67,12 @@ function myTimer() {
 
     document.getElementById("sasin").innerHTML = sasin;
 
+    var nowak = Math.round(zloty/40000)
+
+  document.getElementById("nowak").innerHTML = nowak;
+
+var dworczyk = Math.round(zloty/4320)
+
+  document.getElementById("dworczyk").innerHTML = dworczyk;
 }
 });
