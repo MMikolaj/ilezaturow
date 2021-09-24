@@ -52,6 +52,11 @@ function myTimer() {
   var timeDiff = (currentTime - startTime)/1000;
   var euro = Math.round(timeDiff * euroPerSecond)
 
+  var euroMil = Math.floor(euro/1000000)
+  var euroTys = Math.floor((euro-euroMil*1000000)/1000)
+
+  console.log(""+euroMil+" "+euroTys)
+
   var zloty = Math.round(euro * 4.6)
 
   var sasin = Math.round(zloty/70000000 *100000)/100000
