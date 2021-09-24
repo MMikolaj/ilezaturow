@@ -7,13 +7,12 @@ var startTime = startTime.getTime();
 var currentTime = new Date();
 var timeDiff = (currentTime.getTime() - startTime)/1000;
 
-console.log(timeDiff/84600)
 
 var euroPerSecond = 500000 / 86400
 
 var euro = Math.round(timeDiff * euroPerSecond)
 
-console.log(euro+" euros")
+
 
 var zloty = Math.round(euro * 4.6)
 
@@ -21,7 +20,6 @@ console.log(zloty+" PLN")
 
 var sasin = Math.round(zloty/70000000 *100000)/100000
 
-console.log(sasin+" $a$inów")
 
 var nowak = Math.round(zloty/40000)
 
