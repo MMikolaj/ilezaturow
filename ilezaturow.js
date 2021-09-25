@@ -31,7 +31,7 @@ var ratownik = Math.round(zloty/2844)
 
   var pielegniarka = Math.round(zloty/3141)
 
-
+  var nauczyciel = Math.round(zloty/2582)
 
 
 $( document ).ready(function() {
@@ -53,7 +53,7 @@ function amount(){
     $("#respiratory").html(Number(respiratory).toLocaleString());
     $("#ratownik").html(Number(ratownik).toLocaleString());
     $("#pielegniarka").html(Number(pielegniarka).toLocaleString());
-
+    $("#nauczyciel").html(Number(nauczyciel).toLocaleString());
 
 var myVar = setInterval(myTimer, 1000);
 
@@ -102,6 +102,12 @@ var respiratory = Math.round(zloty/(370000000/2200))
 var pielegniarka = Math.round(zloty/3141)
 
   document.getElementById("pielegniarka").innerHTML = Number(pielegniarka).toLocaleString();
+
+  var nauczyciel = Math.round(zloty/2582)
+
+    document.getElementById("nauczyciel").innerHTML = Number(nauczyciel).toLocaleString();
+
+
 
 }
 });
