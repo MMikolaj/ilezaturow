@@ -23,6 +23,10 @@ var nowak = Math.round(zloty/40000)
 
 var dworczyk = Math.round(zloty/4320)
 
+var piecsetplus = Math.round(zloty/500)
+
+var respiratory = Math.round(zloty/(370000000/2200))
+
 
 $( document ).ready(function() {
 
@@ -38,7 +42,9 @@ function amount(){
     $("#zloty").html(Number(zloty).toLocaleString());
     $("#sasin").html(sasin);
     $("#nowak").html(nowak);
-    $("#dworczyk").html(dworczyk);
+    $("#dworczyk").html(Number(dworczyk).toLocaleString());
+    $("#piecsetplus").html(Number(piecsetplus).toLocaleString());
+    $("#respiratory").html(Number(respiratory).toLocaleString());
 
 
 var myVar = setInterval(myTimer, 1000);
@@ -46,7 +52,7 @@ var myVar = setInterval(myTimer, 1000);
 function myTimer() {
 
   var startTime = new Date(Date.UTC(2021, 8, 20, 14));
-  console.log(startTime);
+  // console.log(startTime);
   var startTime = startTime.getTime();
 
   var currentTime = Date.now();
@@ -68,8 +74,17 @@ function myTimer() {
 
   document.getElementById("nowak").innerHTML = nowak;
 
-var dworczyk = Math.round(zloty/4320)
+  var dworczyk = Math.round(zloty/4320)
 
-  document.getElementById("dworczyk").innerHTML = dworczyk;
+  document.getElementById("dworczyk").innerHTML = Number(dworczyk).toLocaleString();
+
+  var piecsetplus = Math.round(zloty/500)
+
+  document.getElementById("piecsetplus").innerHTML = Number(piecsetplus).toLocaleString();
+
+var respiratory = Math.round(zloty/(370000000/2200))
+
+  document.getElementById("respiratory").innerHTML = Number(respiratory).toLocaleString();
+
 }
 });
