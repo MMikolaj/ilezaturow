@@ -34,8 +34,8 @@ function amount(){
 
 }
 
-    $("#euro").html(euro);
-    $("#zloty").html(zloty);
+    $("#euro").html(Number(euro).toLocaleString());
+    $("#zloty").html(Number(zloty).toLocaleString());
     $("#sasin").html(sasin);
     $("#nowak").html(nowak);
     $("#dworczyk").html(dworczyk);
@@ -45,26 +45,22 @@ var myVar = setInterval(myTimer, 1000);
 
 function myTimer() {
 
-  var startTime = new Date(2021, 8, 20, 18);
+  var startTime = new Date(Date.UTC(2021, 8, 20, 14));
+  console.log(startTime);
   var startTime = startTime.getTime();
 
   var currentTime = Date.now();
   var timeDiff = (currentTime - startTime)/1000;
   var euro = Math.round(timeDiff * euroPerSecond)
 
-  var euroMil = Math.floor(euro/1000000)
-  var euroTys = Math.floor((euro-euroMil*1000000)/1000)
-
-  console.log(""+euroMil+" "+euroTys)
-
   var zloty = Math.round(euro * 4.6)
 
   var sasin = Math.round(zloty/70000000 *100000)/100000
 
 // $("#euro").innerHTML(euro);
- document.getElementById("euro").innerHTML = euro;
+ document.getElementById("euro").innerHTML = Number(euro).toLocaleString();
 
-  document.getElementById("zloty").innerHTML = zloty;
+  document.getElementById("zloty").innerHTML = Number(zloty).toLocaleString();
 
     document.getElementById("sasin").innerHTML = sasin;
 
