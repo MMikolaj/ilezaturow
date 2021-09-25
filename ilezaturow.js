@@ -27,6 +27,12 @@ var piecsetplus = Math.round(zloty/500)
 
 var respiratory = Math.round(zloty/(370000000/2200))
 
+var ratownik = Math.round(zloty/2844)
+
+  var pielegniarka = Math.round(zloty/3141)
+
+
+
 
 $( document ).ready(function() {
 
@@ -45,6 +51,8 @@ function amount(){
     $("#dworczyk").html(Number(dworczyk).toLocaleString());
     $("#piecsetplus").html(Number(piecsetplus).toLocaleString());
     $("#respiratory").html(Number(respiratory).toLocaleString());
+    $("#ratownik").html(Number(ratownik).toLocaleString());
+    $("#pielegniarka").html(Number(pielegniarka).toLocaleString());
 
 
 var myVar = setInterval(myTimer, 1000);
@@ -85,6 +93,15 @@ function myTimer() {
 var respiratory = Math.round(zloty/(370000000/2200))
 
   document.getElementById("respiratory").innerHTML = Number(respiratory).toLocaleString();
+
+  var ratownik = Math.round(zloty/2844)
+
+    document.getElementById("ratownik").innerHTML = Number(ratownik).toLocaleString();
+
+
+var pielegniarka = Math.round(zloty/3141)
+
+  document.getElementById("pielegniarka").innerHTML = Number(pielegniarka).toLocaleString();
 
 }
 });
