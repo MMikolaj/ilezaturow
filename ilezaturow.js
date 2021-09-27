@@ -1,5 +1,5 @@
 
-var startTime = new Date(2021, 8, 20, 18);
+var startTime = new Date(Date.UTC(2021, 8, 20, 14));
 
 var startTime = startTime.getTime();
 
@@ -33,6 +33,8 @@ var ratownik = Math.round(zloty/2844)
 
   var nauczyciel = Math.round(zloty/2582)
 
+  var aniolki = Math.round(zloty/((49563+42760)/2))
+
 
 $( document ).ready(function() {
 
@@ -54,6 +56,7 @@ function amount(){
     $("#ratownik").html(Number(ratownik).toLocaleString());
     $("#pielegniarka").html(Number(pielegniarka).toLocaleString());
     $("#nauczyciel").html(Number(nauczyciel).toLocaleString());
+        $("#aniolki").html(Number(aniolki).toLocaleString());
 
 var myVar = setInterval(myTimer, 1000);
 
