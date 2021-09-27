@@ -16,7 +16,7 @@ var euro = Math.round(timeDiff * euroPerSecond)
 
 var zloty = Math.round(euro * 4.6)
 
-var sasin = Math.round(zloty/70000000 *100000)/100000
+var sasin = Math.round(zloty/70000000 *1000)/1000
 
 
 var nowak = Math.round(zloty/40000)
@@ -69,7 +69,7 @@ function myTimer() {
 
   var zloty = Math.round(euro * 4.6)
 
-  var sasin = Math.round(zloty/70000000 *100000)/100000
+  var sasin = Math.round(zloty/70000000 *10000)/10000
 
 // $("#euro").innerHTML(euro);
  document.getElementById("euro").innerHTML = Number(euro).toLocaleString();
@@ -107,7 +107,9 @@ var pielegniarka = Math.round(zloty/3141)
 
     document.getElementById("nauczyciel").innerHTML = Number(nauczyciel).toLocaleString();
 
+var aniolki = Math.round(zloty/((49563+42760)/2))
 
+    document.getElementById("aniolki").innerHTML = Number(aniolki).toLocaleString();
 
 }
 });
