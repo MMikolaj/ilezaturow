@@ -55,7 +55,7 @@ function amount(){
     $("#euro").html(Number(euro).toLocaleString());
     $("#zloty").html(Number(zloty).toLocaleString());
     $("#sasin").html(Number(sasin).toLocaleString());
-    // $("#sasin").html(sasin);
+
     $("#nowak").html(nowak);
     $("#dworczyk").html(Number(dworczyk).toLocaleString());
     $("#osmiorniczka").html(Number(osmiorniczka).toLocaleString());
@@ -90,8 +90,6 @@ function myTimer() {
 
     document.getElementById("sasin").innerHTML = Number(sasin).toLocaleString();
 
-    // document.getElementById("sasin").innerHTML = sasin;
-
     var nowak = Math.round(zloty/40000)
 
   document.getElementById("nowak").innerHTML = nowak;
@@ -111,6 +109,10 @@ document.getElementById("osmiorniczka").innerHTML = Number(osmiorniczka).toLocal
 var respiratory = Math.round(zloty/(370000000/2200))
 
   document.getElementById("respiratory").innerHTML = Number(respiratory).toLocaleString();
+
+  var tvp = Math.round(zloty/(2*10**9)*1000)/1000
+
+    document.getElementById("tvp").innerHTML = Number(tvp).toLocaleString();
 
   var ratownik = Math.round(zloty/2844)
 
