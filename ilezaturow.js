@@ -23,6 +23,8 @@ var nowak = Math.round(zloty/40000)
 
 var dworczyk = Math.round(zloty/4320)
 
+  var osmiorniczka  = Math.round(zloty/50)
+
 var piecsetplus = Math.round(zloty/500)
 
 var respiratory = Math.round(zloty/(370000000/2200))
@@ -34,6 +36,10 @@ var ratownik = Math.round(zloty/2844)
   var nauczyciel = Math.round(zloty/2582)
 
   var aniolki = Math.round(zloty/((49563+42760)/2))
+
+  var tvp = Math.round(zloty/(2*10**9)*1000)/1000
+
+
 
 
 $( document ).ready(function() {
@@ -48,15 +54,18 @@ function amount(){
 
     $("#euro").html(Number(euro).toLocaleString());
     $("#zloty").html(Number(zloty).toLocaleString());
-    $("#sasin").html(sasin);
+    $("#sasin").html(Number(sasin).toLocaleString());
+    // $("#sasin").html(sasin);
     $("#nowak").html(nowak);
     $("#dworczyk").html(Number(dworczyk).toLocaleString());
+    $("#osmiorniczka").html(Number(osmiorniczka).toLocaleString());
     $("#piecsetplus").html(Number(piecsetplus).toLocaleString());
     $("#respiratory").html(Number(respiratory).toLocaleString());
     $("#ratownik").html(Number(ratownik).toLocaleString());
     $("#pielegniarka").html(Number(pielegniarka).toLocaleString());
     $("#nauczyciel").html(Number(nauczyciel).toLocaleString());
-        $("#aniolki").html(Number(aniolki).toLocaleString());
+    $("#aniolki").html(Number(aniolki).toLocaleString());
+    $("#tvp").html(Number(tvp).toLocaleString());
 
 var myVar = setInterval(myTimer, 1000);
 
@@ -79,7 +88,9 @@ function myTimer() {
 
   document.getElementById("zloty").innerHTML = Number(zloty).toLocaleString();
 
-    document.getElementById("sasin").innerHTML = sasin;
+    document.getElementById("sasin").innerHTML = Number(sasin).toLocaleString();
+
+    // document.getElementById("sasin").innerHTML = sasin;
 
     var nowak = Math.round(zloty/40000)
 
@@ -88,6 +99,10 @@ function myTimer() {
   var dworczyk = Math.round(zloty/4320)
 
   document.getElementById("dworczyk").innerHTML = Number(dworczyk).toLocaleString();
+
+  var osmiorniczka = Math.round(zloty/50)
+
+document.getElementById("osmiorniczka").innerHTML = Number(osmiorniczka).toLocaleString();
 
   var piecsetplus = Math.round(zloty/500)
 
