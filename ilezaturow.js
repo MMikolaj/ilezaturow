@@ -39,6 +39,7 @@ var ratownik = Math.round(zloty/2844)
 
   var tvp = Math.round(zloty/(2*10**9)*1000)/1000
 
+  var caritas = Math.round(zloty/(9186158+2298117)*100)/100
 
 
 
@@ -61,11 +62,14 @@ function amount(){
     $("#osmiorniczka").html(Number(osmiorniczka).toLocaleString());
     $("#piecsetplus").html(Number(piecsetplus).toLocaleString());
     $("#respiratory").html(Number(respiratory).toLocaleString());
+    $("#aniolki").html(Number(aniolki).toLocaleString());
+    $("#tvp").html(Number(tvp).toLocaleString());
+    $("#caritas").html(Number(caritas).toLocaleString());
+
     $("#ratownik").html(Number(ratownik).toLocaleString());
     $("#pielegniarka").html(Number(pielegniarka).toLocaleString());
     $("#nauczyciel").html(Number(nauczyciel).toLocaleString());
-    $("#aniolki").html(Number(aniolki).toLocaleString());
-    $("#tvp").html(Number(tvp).toLocaleString());
+
 
 var myVar = setInterval(myTimer, 1000);
 
@@ -113,6 +117,11 @@ var respiratory = Math.round(zloty/(370000000/2200))
   var tvp = Math.round(zloty/(2*10**9)*1000)/1000
 
     document.getElementById("tvp").innerHTML = Number(tvp).toLocaleString();
+
+  var caritas = Math.round(zloty/(9186158+2298117)*100)/100
+
+  document.getElementById("caritas").innerHTML = Number(caritas).toLocaleString();
+
 
   var ratownik = Math.round(zloty/2844)
 
