@@ -18,6 +18,8 @@ var zloty = Math.round(euro * 4.6)
 
 var sasin = Math.round(zloty/70000000 *1000)/1000
 
+var ziobro = Math.round(zloty/280000000 *10000)/10000
+
 
 var nowak = Math.round(zloty/40000)
 
@@ -56,6 +58,8 @@ function amount(){
     $("#euro").html(Number(euro).toLocaleString());
     $("#zloty").html(Number(zloty).toLocaleString());
     $("#sasin").html(Number(sasin).toLocaleString());
+    $("#ziobro").html(Number(ziobro).toLocaleString());
+
 
     $("#nowak").html(nowak);
     $("#dworczyk").html(Number(dworczyk).toLocaleString());
@@ -93,6 +97,11 @@ function myTimer() {
   document.getElementById("zloty").innerHTML = Number(zloty).toLocaleString();
 
     document.getElementById("sasin").innerHTML = Number(sasin).toLocaleString();
+
+var ziobro = Math.round(zloty/280000000 *10000)/10000
+
+  document.getElementById("ziobro").innerHTML = Number(ziobro).toLocaleString();
+
 
     var nowak = Math.round(zloty/40000)
 
