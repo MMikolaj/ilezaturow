@@ -43,6 +43,8 @@ var ratownik = Math.round(zloty/2844)
 
   var caritas = Math.round(zloty/(9186158+2298117)*100)/100
 
+  var emeryt = Math.round(zloty/1919.16)
+
 
 
 $( document ).ready(function() {
@@ -73,6 +75,7 @@ function amount(){
     $("#ratownik").html(Number(ratownik).toLocaleString());
     $("#pielegniarka").html(Number(pielegniarka).toLocaleString());
     $("#nauczyciel").html(Number(nauczyciel).toLocaleString());
+    $("#emeryt").html(Number(emeryt).toLocaleString());
 
 
 var myVar = setInterval(myTimer, 1000);
@@ -149,5 +152,8 @@ var aniolki = Math.round(zloty/((49563+42760)/2))
 
     document.getElementById("aniolki").innerHTML = Number(aniolki).toLocaleString();
 
+  var emeryt = Math.round(zloty/1919.16)
+
+    document.getElementById("emeryt").innerHTML = Number(emeryt).toLocaleString();
 }
 });
