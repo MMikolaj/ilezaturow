@@ -29,6 +29,10 @@ var dworczyk = Math.round(zloty/4320)
 
 var piecsetplus = Math.round(zloty/500)
 
+var dodatekRodzic = Math.round(zloty/193)
+
+var zasilekPielegnacyjny = Math.round(zloty/215.84)
+
 var respiratory = Math.round(zloty/(370000000/2200))
 
 var ratownik = Math.round(zloty/2844)
@@ -67,6 +71,8 @@ function amount(){
     $("#dworczyk").html(Number(dworczyk).toLocaleString());
     $("#osmiorniczka").html(Number(osmiorniczka).toLocaleString());
     $("#piecsetplus").html(Number(piecsetplus).toLocaleString());
+    $("#dodatekRodzic").html(Number(dodatekRodzic).toLocaleString());
+    $("#zasilekPielegnacyjny").html(Number(zasilekPielegnacyjny).toLocaleString());
     $("#respiratory").html(Number(respiratory).toLocaleString());
     $("#aniolki").html(Number(aniolki).toLocaleString());
     $("#tvp").html(Number(tvp).toLocaleString());
@@ -121,6 +127,14 @@ document.getElementById("osmiorniczka").innerHTML = Number(osmiorniczka).toLocal
   var piecsetplus = Math.round(zloty/500)
 
   document.getElementById("piecsetplus").innerHTML = Number(piecsetplus).toLocaleString();
+
+  var dodatekRodzic = Math.round(zloty/193)
+
+    document.getElementById("dodatekRodzic").innerHTML = Number(dodatekRodzic).toLocaleString();
+
+  var zasilekPielegnacyjny = Math.round(zloty/215.84)
+
+    document.getElementById("zasilekPielegnacyjny").innerHTML = Number(zasilekPielegnacyjny).toLocaleString();
 
 var respiratory = Math.round(zloty/(370000000/2200))
 
