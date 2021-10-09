@@ -16,12 +16,12 @@ var euro = Math.round(timeDiff * euroPerSecond)
 
 var zloty = Math.round(euro * 4.6)
 
-var sasin = Math.round(zloty/70000000 *1000)/1000
+var sasin = Math.round(zloty/68896820*1000)/1000
 
 var ziobro = Math.round(zloty/280000000 *10000)/10000
 
 
-var nowak = Math.round(zloty/40000)
+var nowak = Math.round(zloty/28000)
 
 var dworczyk = Math.round(zloty/4320)
 
@@ -47,7 +47,7 @@ var ratownik = Math.round(zloty/2844)
 
   var caritas = Math.round(zloty/(9186158+2298117)*100)/100
 
-  var emeryt = Math.round(zloty/1919.16)
+  var emeryt = Math.round(zloty/2139.22)
 
 
 
@@ -94,11 +94,11 @@ function myTimer() {
 
   var currentTime = Date.now();
   var timeDiff = (currentTime - startTime)/1000;
-  var euro = Math.round(timeDiff * euroPerSecond)
+  var euro = Math.round(timeDiff * euroPerSecond);
 
-  var zloty = Math.round(euro * 4.6)
+  var zloty = Math.round(euro * 4.6);
 
-  var sasin = Math.round(zloty/70000000 *10000)/10000
+  var sasin = Math.round(zloty/68896820*10000)/10000;
 
 // $("#euro").innerHTML(euro);
  document.getElementById("euro").innerHTML = Number(euro).toLocaleString();
@@ -107,32 +107,32 @@ function myTimer() {
 
     document.getElementById("sasin").innerHTML = Number(sasin).toLocaleString();
 
-var ziobro = Math.round(zloty/280000000 *10000)/10000
+var ziobro = Math.round(zloty/280000000 *10000)/10000;
 
   document.getElementById("ziobro").innerHTML = Number(ziobro).toLocaleString();
 
 
-    var nowak = Math.round(zloty/40000)
+    var nowak = Math.round(zloty/28000);
 
   document.getElementById("nowak").innerHTML = nowak;
 
-  var dworczyk = Math.round(zloty/4320)
+  var dworczyk = Math.round(zloty/4320);
 
   document.getElementById("dworczyk").innerHTML = Number(dworczyk).toLocaleString();
 
-  var osmiorniczka = Math.round(zloty/50)
+  var osmiorniczka = Math.round(zloty/50);
 
 document.getElementById("osmiorniczka").innerHTML = Number(osmiorniczka).toLocaleString();
 
-  var piecsetplus = Math.round(zloty/500)
+  var piecsetplus = Math.round(zloty/500);
 
   document.getElementById("piecsetplus").innerHTML = Number(piecsetplus).toLocaleString();
 
-  var dodatekRodzic = Math.round(zloty/193)
+  var dodatekRodzic = Math.round(zloty/193);
 
     document.getElementById("dodatekRodzic").innerHTML = Number(dodatekRodzic).toLocaleString();
 
-  var zasilekPielegnacyjny = Math.round(zloty/215.84)
+  var zasilekPielegnacyjny = Math.round(zloty/215.84);
 
     document.getElementById("zasilekPielegnacyjny").innerHTML = Number(zasilekPielegnacyjny).toLocaleString();
 
@@ -166,7 +166,7 @@ var aniolki = Math.round(zloty/((49563+42760)/2))
 
     document.getElementById("aniolki").innerHTML = Number(aniolki).toLocaleString();
 
-  var emeryt = Math.round(zloty/1919.16)
+  var emeryt = Math.round(zloty/2139.22)
 
     document.getElementById("emeryt").innerHTML = Number(emeryt).toLocaleString();
 }
