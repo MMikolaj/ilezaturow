@@ -16,6 +16,8 @@ var euro = Math.round(timeDiff * euroPerSecond)
 
 var zloty = Math.round(euro * 4.6)
 
+var korona = Math.round(euro * 25.73)
+
 var sasin = Math.round(zloty/68896820*1000)/1000
 
 var ziobro = Math.round(zloty/280000000 *10000)/10000
@@ -63,6 +65,7 @@ function amount(){
 
     $("#euro").html(Number(euro).toLocaleString());
     $("#zloty").html(Number(zloty).toLocaleString());
+    $("#korona").html(Number(korona).toLocaleString());
     $("#sasin").html(Number(sasin).toLocaleString());
     $("#ziobro").html(Number(ziobro).toLocaleString());
 
@@ -97,6 +100,7 @@ function myTimer() {
   var euro = Math.round(timeDiff * euroPerSecond);
 
   var zloty = Math.round(euro * 4.6);
+  var korona = Math.round(euro * 25.73);
 
   var sasin = Math.round(zloty/68896820*10000)/10000;
 
@@ -104,6 +108,8 @@ function myTimer() {
  document.getElementById("euro").innerHTML = Number(euro).toLocaleString();
 
   document.getElementById("zloty").innerHTML = Number(zloty).toLocaleString();
+
+  document.getElementById("korona").innerHTML = Number(korona).toLocaleString();
 
     document.getElementById("sasin").innerHTML = Number(sasin).toLocaleString();
 
