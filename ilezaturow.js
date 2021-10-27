@@ -1,22 +1,30 @@
 
 var startTime = new Date(Date.UTC(2021, 8, 20, 14));
-
 var startTime = startTime.getTime();
+
+var startTimeIzba = new Date(Date.UTC(2021, 9, 27, 14));
+var startTimeIzba = startTimeIzba.getTime();
 
 
 var currentTime = new Date();
 var timeDiff = (currentTime.getTime() - startTime)/1000;
+var timeDiffIzba = (currentTime.getTime() - startTimeIzba)/1000;
 
 
 var euroPerSecond = 500000 / 86400
-
-var euro = Math.round(timeDiff * euroPerSecond)
-
+var euroPerSecondIzba = 1000000 / 86400
 
 
-var zloty = Math.round(euro * 4.6)
 
-var korona = Math.round(euro * 25.73)
+var euro_turow = Math.round(timeDiff * euroPerSecond)
+var zloty_turow = Math.round(euro_turow * 4.6)
+var korona = Math.round(euro_turow * 25.73)
+
+var euro_izba = Math.round(timeDiffIzba * euroPerSecondIzba)
+var zloty_izba = Math.round(euro_izba * 4.6)
+
+var euro = euro_turow+euro_izba
+var zloty = zloty_turow+zloty_izba
 
 var sasin = Math.round(zloty/68896820*1000)/1000
 
@@ -63,9 +71,15 @@ function amount(){
 
 }
 
+    $("#euro_turow").html(Number(euro_turow).toLocaleString());
+    $("#zloty_turow").html(Number(zloty_turow).toLocaleString());
+    $("#korona").html(Number(korona).toLocaleString());
+
+    $("#euro_izba").html(Number(euro_izba).toLocaleString());
+    $("#zloty_izba").html(Number(zloty_izba).toLocaleString());
+
     $("#euro").html(Number(euro).toLocaleString());
     $("#zloty").html(Number(zloty).toLocaleString());
-    $("#korona").html(Number(korona).toLocaleString());
     $("#sasin").html(Number(sasin).toLocaleString());
     $("#ziobro").html(Number(ziobro).toLocaleString());
 
@@ -91,25 +105,46 @@ var myVar = setInterval(myTimer, 1000);
 
 function myTimer() {
 
-  var startTime = new Date(Date.UTC(2021, 8, 20, 14));
-  // console.log(startTime);
-  var startTime = startTime.getTime();
+var startTime = new Date(Date.UTC(2021, 8, 20, 14));
+var startTime = startTime.getTime();
 
-  var currentTime = Date.now();
-  var timeDiff = (currentTime - startTime)/1000;
-  var euro = Math.round(timeDiff * euroPerSecond);
+var startTimeIzba = new Date(Date.UTC(2021, 9, 27, 14));
+var startTimeIzba = startTimeIzba.getTime();
 
-  var zloty = Math.round(euro * 4.6);
-  var korona = Math.round(euro * 25.73);
+
+var currentTime = new Date();
+var timeDiff = (currentTime.getTime() - startTime)/1000;
+var timeDiffIzba = (currentTime.getTime() - startTimeIzba)/1000;
+
+
+var euroPerSecond = 500000 / 86400
+var euroPerSecondIzba = 1000000 / 86400
+
+
+
+var euro_turow = Math.round(timeDiff * euroPerSecond)
+var zloty_turow = Math.round(euro_turow * 4.6)
+var korona = Math.round(euro_turow * 25.73)
+
+var euro_izba = Math.round(timeDiffIzba * euroPerSecondIzba)
+var zloty_izba = Math.round(euro_izba * 4.6)
+
+var euro = euro_turow+euro_izba
+var zloty = zloty_turow+zloty_izba
 
   var sasin = Math.round(zloty/68896820*10000)/10000;
 
 // $("#euro").innerHTML(euro);
- document.getElementById("euro").innerHTML = Number(euro).toLocaleString();
-
-  document.getElementById("zloty").innerHTML = Number(zloty).toLocaleString();
-
+ document.getElementById("euro_turow").innerHTML = Number(euro_turow).toLocaleString();
+ document.getElementById("zloty_turow").innerHTML = Number(zloty_turow).toLocaleString();
   document.getElementById("korona").innerHTML = Number(korona).toLocaleString();
+
+ document.getElementById("euro_izba").innerHTML = Number(euro_izba).toLocaleString();
+ document.getElementById("zloty_izba").innerHTML = Number(zloty_izba).toLocaleString();
+
+ document.getElementById("euro").innerHTML = Number(euro).toLocaleString();
+ document.getElementById("zloty").innerHTML = Number(zloty).toLocaleString();
+
 
     document.getElementById("sasin").innerHTML = Number(sasin).toLocaleString();
 
