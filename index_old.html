@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Szacunkowa wysokość kary zasądzonej przez TSUE za niezaprzestanie wydobycia węgla w kopalni Turów.">
+    <meta name="robots" content="index">
+
+    <link rel="icon" href="media/icon.png">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MK2CTPMWTG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MK2CTPMWTG');
+</script>
+
+<!-- socials -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.4/social-share.min.css">
+<script src="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.4/social-share.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- test js -->
+
+<style>
+
+#socials a, footer a {
+  text-decoration: none;
+}
+
+</style>
+
+
+
+    <title>Ile za Turów? - Licznik wysokości kary</title>
+
+
+  </head>
+
+
+  <body>
+
+    <main>
+          <div class="container" id="socials">
+
+
+            <div class="text-end">
+              Jesteśmy na:
+              <a href="https://twitter.com/IleZaTurow" target="_blank">
+                <button type="button" class="btn btn-primary me-md-2" style="background-color: #1A8CD8;">
+                  Twitter <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg></button>
+              </a>
+
+              <a href="https://www.facebook.com/Ile-za-Tur%C3%B3w-109514364825554" target="_blank">
+                <button type="button" class="btn btn-primary me-md-2" style="background-color: #036CE4">
+              Facebook <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </svg></button>
+              </a>
+
+            </div>
+
+
+
+          </div>
+
+          <div class="container p-5">
+
+            <div class="container-fluid">
+              <h1>Ile za Turów?</h1>
+              <p>Po kilku miesiącach ciężkiej walki w pocie czoła polskiej dyplomacji oraz rządu P** udało się osiągnąc sukces w sprawie zażegnania kryzysu związanego z kopalnią w Turowie. W dniu 20 września 2021 Trybunał Sprawiedliwości Uni Europejskiej nałożył na Polskę karę w wysokości 500 000 EURO dziennie, a rząd P** otrzymał postanowienie tego wyroku około godziny 16. Od tego czasu bije nasz licznik ilustrujący ile to wszystko będzie nas kosztować.</p>
+
+      <ul class="list-group list-group-flush fs-5 fw-bolder py-3">
+        <li class="list-group-item d-flex justify-content-center">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU flag" height="30" class="mx-2">
+          <span id="euro"></span>&nbsp;EURO
+        </li>
+
+
+        <li class="list-group-item d-flex justify-content-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Flag_of_Poland_%28normative%29.svg" alt="Poland flag" height="30" class="mx-2">
+          <span id="zloty"></span>&nbsp;PLN
+
+      <!-- <span class="text-decoration-underline" data-bs-toggle="tooltip" data-bs-placement="top" title="Przy kursie EURO/PLN = 4.60">
+        PLN
+      </span> -->
+
+        </li>
+
+        <li class="list-group-item d-flex justify-content-center">
+        <img src="media/clown.svg" alt="Sasin" height="30" class="mx-2">
+        <span id="sasin"></span>&nbsp;Sa$ina
+        <!-- <span class="text-decoration-underline" data-bs-toggle="tooltip" data-bs-placement="top" title="1 Sa$in = 70 000  000 PLN">
+          Sa$inów
+        </span> -->
+        </li>
+
+
+          <li class="list-group-item d-flex justify-content-center">
+          <img src="media/zero.svg" alt="Ziobro" height="30" class="mx-2">
+          <span id="ziobro"></span>&nbsp;Zi0bry
+          <!-- <span class="text-decoration-underline" data-bs-toggle="tooltip" data-bs-placement="top" title="1 Sa$in = 70 000  000 PLN">
+            Sa$inów
+          </span> -->
+          </li>
+
+        <li class="list-group-item d-flex justify-content-center">
+        <img src="media/watch.svg" alt="Zegarek Nowaka" height="30" class="mx-2">
+        <span id="nowak"></span>&nbsp;zegarków Nowaka
+        <!-- <span class="text-decoration-underline" data-bs-toggle="tooltip" data-bs-placement="top" title="1 zegarek Nowaka = 40 000 PLN">
+          Nowaka
+        </span> -->
+        </li>
+
+          <li class="list-group-item d-flex justify-content-center text-nowrap">
+          <img src="media/dinner.svg" alt="Obiad Dworczyka" height="30" class="mx-2">
+          <span id="dworczyk"></span>&nbsp;obiadów Dworczyka
+      <!-- <span class="text-decoration-underline" data-bs-toggle="tooltip" data-bs-placement="top" title="1 obiad Dworczyka = 4 320 PLN" trigger="click">
+        Dworczyka
+      </span> -->
+            </li>
+
+
+      <li class="list-group-item d-flex justify-content-center text-nowrap">
+      <img src="media/osmiorniczka.svg" alt="Osmiorniczka" height="30" class="mx-2">
+      <span id="osmiorniczka"></span>&nbsp;kg ośmiorniczek
+      <!-- <span class="text-decoration-underline" data-bs-toggle="tooltip" data-bs-placement="top" title="1 obiad Dworczyka = 4 320 PLN" trigger="click">
+      Dworczyka
+      </span> -->
+        </li>
+
+        <li class="list-group-item d-flex text-nowrap justify-content-center">
+        <img src="media/500.svg" alt="500 plus" height="30" class="mx-2">
+        <span id="piecsetplus"></span>&nbsp;wypłat "500+"
+
+          </li>
+
+    <li class="list-group-item d-flex text-nowrap justify-content-center">
+    <img src="media/baby-boy.png" alt="Dziecko" height="30" class="mx-2">
+    <span id="dodatekRodzic"></span>&nbsp;dodatków dla samotnych rodziców
+
+      </li>
+
+    <li class="list-group-item d-flex text-nowrap justify-content-center">
+    <img src="media/disabled-people.png" alt="Niepełnosprawny" height="30" class="mx-2">
+    <span id="zasilekPielegnacyjny"></span>&nbsp;zasiłków pielęgnacyjnych
+<!-- https://www.pit.pl/zasilki/ -->
+      </li>
+
+            <li class="list-group-item d-flex text-nowrap justify-content-center">
+            <img src="media/respirator.svg" alt="Respirator od handlarza bronią" height="30" class="mx-2">
+            <span id="respiratory"></span>&nbsp;respiratorów od handlarza bronią
+
+              </li>
+
+
+      <li class="list-group-item d-flex text-nowrap justify-content-center">
+      <img src="media/angel.svg" alt="Aniołki Glapińskiego" height="30" class="mx-2">
+      <span id="aniolki"></span>&nbsp;pensji aniołków Glapińskiego
+
+        </li>
+
+
+        <li class="list-group-item d-flex text-nowrap justify-content-center">
+        <img src="media/tv.svg" alt="TVPIS" height="30" class="mx-2">
+        <span id="tvp"></span>&nbsp;rocznych dofinansowań TVPIS
+
+          </li>
+
+      <li class="list-group-item d-flex text-nowrap justify-content-center">
+      <img src="media/thief.svg" alt="Caritas" height="30" class="mx-2">
+      <span id="caritas"></span>&nbsp;sumy wyłudzonej przez płocki Caritas
+      <!-- https://oko.press/piotr-libera-unijne-dotacje-pfron-caritas-19-mln-zl/ -->
+        </li>
+
+
+
+                <li class="list-group-item pt-4">
+                  <h3>Przeciętnych wynagrodzeń (netto):</h3>
+                </li>
+
+        <li class="list-group-item d-flex text-nowrap justify-content-center">
+          <img src="media/ratownik.svg" alt="Ratownik medyczny" height="30" class="mx-2">
+        <span id="ratownik"></span>&nbsp;ratowników medycznych
+
+          </li>
+
+        <li class="list-group-item d-flex text-nowrap justify-content-center">
+          <img src="media/pielegniarka.svg" alt="Pielęgniarka" height="30" class="mx-2">
+        <span id="pielegniarka"></span>&nbsp;pielęgniarek
+
+
+          </li>
+
+            <li class="list-group-item d-flex text-nowrap justify-content-center">
+              <img src="media/nauczyciel.svg" alt="Pielęgniarka" height="30" class="mx-2">
+            <span id="nauczyciel"></span>&nbsp;nauczycieli stażystów
+
+
+              </li>
+
+            <li class="list-group-item d-flex text-nowrap justify-content-center">
+              <img src="media/emeryt.svg" alt="Emeryt" height="30" class="mx-2">
+            <span id="emeryt"></span>&nbsp;emerytów
+
+
+          <!-- https://stat.gov.pl/obszary-tematyczne/warunki-zycia/dochody-wydatki-i-warunki-zycia-ludnosci/emerytury-i-renty-w-2019-r-,32,11.html -->
+
+
+              </li>
+
+      </ul>
+
+
+
+
+            </div>
+            <div class="container pt-3">
+              <h6>Podziel się z innymi</h6>
+              <div class="ss-box" data-ss-social="share, messenger, facebook, twitter, email"></div>
+            </div>
+
+
+
+          </div>
+    </main>
+
+
+
+    <footer>
+<div class="container bg-light pt-2">
+  <div class="row align-items-center">
+
+    <div class="col-md-6 text-center">
+      <h6>O nas</h6>
+    <p style="font-size: 0.6em;">Na pamiątkę sukcesów p**owskiej dyplomacji liczymy wysokość możliwą wysokość kary zasądzonej przez TSUE za niezaprzestanie wydobycia węgla w kopalni Turów.</p>
+  <p style="font-size: 0.6em;">
+     Propozycje innych walut można słać na <a href = "mailto: turow.ileza@gmail.com">turow.ileza@gmail.com</a>
+  </p>
+    </div>
+
+
+        <div class="col-md-6">
+          <div class="text-center">
+              <h6 class="">Ile za turów?</h6>
+
+                <a href="https://twitter.com/IleZaTurow" target="_blank">
+                <button type="button" class="btn" style="color: #1A8CD8;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg></button>
+              </a>
+
+              <a href="https://www.facebook.com/Ile-za-Tur%C3%B3w-109514364825554" target="_blank">
+                <button type="button" class="btn" style="color: #036CE4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg></button>
+              </a>
+          </div>
+
+
+        </div>
+
+
+  </div>
+</div>
+    </footer>
+    <div class="container mb-4 align-text-top justify-content-end d-flex">
+      <p style="font-size: 0.5em;">
+         Korzystamy z ikonek od <a href="https://www.freepik.com" title="Freepik">Freepik</a> z <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      </p>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="ilezaturow.js">
+
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
