@@ -2,7 +2,7 @@
 var startTime = new Date(Date.UTC(2021, 8, 20, 14));
 var startTime = startTime.getTime();
 
-var startTimeIzba = new Date(Date.UTC(2021, 9, 27, 14));
+var startTimeIzba = new Date(Date.UTC(2021, 10, 3, 10));
 var startTimeIzba = startTimeIzba.getTime();
 
 
@@ -108,7 +108,7 @@ function myTimer() {
 var startTime = new Date(Date.UTC(2021, 8, 20, 14));
 var startTime = startTime.getTime();
 
-var startTimeIzba = new Date(Date.UTC(2021, 9, 27, 14));
+var startTimeIzba = new Date(Date.UTC(2021, 10, 3, 10));
 var startTimeIzba = startTimeIzba.getTime();
 
 
