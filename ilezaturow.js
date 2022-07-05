@@ -7,7 +7,12 @@ var startTimeIzba = startTimeIzba.getTime();
 
 
 var currentTime = new Date();
-var timeDiff = (currentTime.getTime() - startTime)/1000;
+
+var turowEnd = new Date(Date.UTC(2022, 1, 4, 14));
+
+// var timeDiff = (currentTime.getTime() - startTime)/1000;
+
+var timeDiff = (turowEnd.getTime() - startTime)/1000;
 var timeDiffIzba = (currentTime.getTime() - startTimeIzba)/1000;
 
 
@@ -113,7 +118,11 @@ var startTimeIzba = startTimeIzba.getTime();
 
 
 var currentTime = new Date();
-var timeDiff = (currentTime.getTime() - startTime)/1000;
+var turowEnd = new Date(Date.UTC(2022, 1, 4, 14));
+
+// var timeDiff = (currentTime.getTime() - startTime)/1000;
+
+var timeDiff = (turowEnd.getTime() - startTime)/1000;
 var timeDiffIzba = (currentTime.getTime() - startTimeIzba)/1000;
 
 
